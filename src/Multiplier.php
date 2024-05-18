@@ -312,7 +312,6 @@ class Multiplier extends Container
 	{
 		$this->createCopies();
 
-		/** @var array<int|string,Container> $containers */
 		$containers = array_filter($this->getComponents(), fn ($component) => $component instanceof Container);
 
 		return $containers;
